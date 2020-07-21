@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Security Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/security-warnings
+
+    Security warnings support safer libraries and applications. These warnings help prevent security flaws in your
+    program. If you disable any of these warnings, you should clearly mark the reason in code and also inform the
+    designated security officer for your development project.
+-->
+
+<RuleSet Name="CA30XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            Review code for SQL injection vulnerabilities
+
+            When working with untrusted input and SQL commands, be mindful of SQL injection attacks. An SQL injection
+            attack can execute malicious SQL commands, compromising the security and integrity of your application.
+        -->
+        <Rule Id="CA3001" Action="None" />
+
+        <!--
+            Review code for XSS vulnerabilities
+
+            When working with untrusted input from web requests, be mindful of cross-site scripting (XSS) attacks. An
+            XSS attack injects untrusted input into raw HTML output, allowing the attacker to execute malicious scripts
+            or maliciously modify content in your web page.
+        -->
+        <Rule Id="CA3002" Action="None" />
+
+        <!--
+            Review code for file path injection vulnerabilities
+
+            When working with untrusted input from web requests, be mindful of using user-controlled input when
+            specifying paths to files.
+        -->
+        <Rule Id="CA3003" Action="None" />
+
+        <!--
+            Review code for information disclosure vulnerabilities
+
+            Disclosing exception information gives attackers insight into the internals of your application, which can
+            help attackers find other vulnerabilities to exploit.
+        -->
+        <Rule Id="CA3004" Action="None" />
+
+        <!--
+            Review code for process command injection vulnerabilities
+
+            When working with untrusted input, be mindful of command injection attacks. A command injection attack can
+            execute malicious commands on the underlying operating system, compromising the security and integrity of
+            your server.
+        -->
+        <Rule Id="CA3006" Action="None" />
+
+        <!--
+            Review code for open redirect vulnerabilities
+
+            When working with untrusted input, be mindful of open redirect vulnerabilities. An attacker can exploit an
+            open redirect vulnerability to use your website to give the appearance of a legitimate URL, but redirect an
+            unsuspecting visitor to a phishing or other malicious webpage.
+        -->
+        <Rule Id="CA3007" Action="None" />
+
+        <!--
+            Review code for XPath injection vulnerabilities
+
+            When working with untrusted input, be mindful of XPath injection attacks. Constructing XPath queries using
+            untrusted input may allow an attacker to maliciously manipulate the query to return an unintended result,
+            and possibly disclose the contents of the queried XML.
+        -->
+        <Rule Id="CA3008" Action="None" />
+
+        <!--
+            Review code for XML injection vulnerabilities
+
+            When working with untrusted input, be mindful of XML injection attacks.
+        -->
+        <Rule Id="CA3009" Action="None" />
+
+        <!--
+            Review code for XAML injection vulnerabilities
+
+            When working with untrusted input, be mindful of XAML injection attacks. XAML is a markup language that
+            directly represents object instantiation and execution. That means elements created in XAML can interact
+            with system resources (for example, network access and file system IO).
+        -->
+        <Rule Id="CA3010" Action="None" />
+
+        <!--
+            Review code for DLL injection vulnerabilities
+
+            When working with untrusted input, be mindful of loading untrusted code. If your web application loads
+            untrusted code, an attacker may be able to inject malicious DLLs into your process and execute malicious
+            code.
+        -->
+        <Rule Id="CA3011" Action="None" />
+
+        <!--
+            Review code for regex injection vulnerabilities
+
+            When working with untrusted input, be mindful of regex injection attacks. An attacker can use regex
+            injection to maliciously modify a regular expression, to make the regex match unintended results, or to make
+            the regex consume excessive CPU resulting in a Denial of Service attack.
+        -->
+        <Rule Id="CA3012" Action="None" />
+
+        <!--
+            Do not add schema by URL
+
+            Do not use the unsafe overload of the Add method because it may cause dangerous external references.
+        -->
+        <Rule Id="CA3061" Action="None" />
+
+        <!--
+            Insecure DTD Processing
+
+            If you use insecure DTDProcessing instances or reference external entity sources, the parser may accept
+            untrusted input and disclose sensitive information to attackers.
+        -->
+        <Rule Id="CA3075" Action="None" />
+
+        <!--
+            Insecure XSLT Script Execution
+
+            If you execute Extensible Stylesheet Language Transformations (XSLT) in .NET applications insecurely, the
+            processor may resolve untrusted URI references that could disclose sensitive information to attackers,
+            leading to Denial of Service and Cross-Site attacks.
+        -->
+        <Rule Id="CA3076" Action="None" />
+
+        <!--
+            Insecure Processing in API Design, XML Document and XML Text Reader
+
+            When designing an API derived from XMLDocument and XMLTextReader, be mindful of DtdProcessing. Using
+            insecure DTDProcessing instances when referencing or resolving external entity sources or setting insecure
+            values in the XML may lead to information disclosure.
+        -->
+        <Rule Id="CA3077" Action="None" />
+
+    </Rules>
+</RuleSet>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RuleSet Name="Microsoft.CodeAnalysis.FxCopAnalyzers Rules" ToolsVersion="14.0">
+
+    <!-- https://docs.microsoft.com/visualstudio/code-quality/code-analysis-for-managed-code-warnings -->
+    <Include Path="CA10XX_Design.ruleset" Action="None" />
+    <Include Path="CA13XX_Globalization.ruleset" Action="None" />
+    <Include Path="CA14XX_Interoperability.ruleset" Action="None" />
+    <Include Path="CA15XX_Maintainability.ruleset" Action="None" />
+    <Include Path="CA16XX_Mobility.ruleset" Action="None" />
+    <Include Path="CA17XX_Naming.ruleset" Action="None" />
+    <Include Path="CA18XX_Performance.ruleset" Action="None" />
+    <Include Path="CA19XX_Portability.ruleset" Action="None" />
+    <Include Path="CA20XX_Reliability.ruleset" Action="None" />
+    <Include Path="CA21XX_Security.ruleset" Action="None" />
+    <Include Path="CA22XX_Usage.ruleset" Action="None" />
+    <Include Path="CA23XX_Security.ruleset" Action="None" />
+    <Include Path="CA30XX_Security.ruleset" Action="None" />
+    <Include Path="CA31XX_Security.ruleset" Action="None" />
+    <Include Path="CA51XX_Security.ruleset" Action="None" />
+    <Include Path="CA53XX_Security.ruleset" Action="None" />
+    <Include Path="CA54XX_Security.ruleset" Action="None" />
+
+    <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/DOCUMENTATION.md -->
+    <Include Path="SA00XX_SpecialRules.ruleset" Action="None" />
+    <Include Path="SA10XX_Spacing.ruleset" Action="None" />
+    <Include Path="SA11XX_Readability.ruleset" Action="None" />
+    <Include Path="SA12XX_Ordering.ruleset" Action="None" />
+    <Include Path="SA13XX_Naming.ruleset" Action="None" />
+    <Include Path="SA14XX_Maintainability.ruleset" Action="None" />
+    <Include Path="SA15XX_Layout.ruleset" Action="None" />
+    <Include Path="SA16XX_Documentation.ruleset" Action="None" />
+    <Include Path="SX_Alternative.ruleset" Action="None" />
+
+</RuleSet>

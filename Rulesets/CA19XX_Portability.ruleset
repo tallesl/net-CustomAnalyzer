@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Portability Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/portability-warnings
+
+    Portability warnings support portability across different operating systems.
+-->
+
+<RuleSet Name="CA19XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            Value type fields should be portable
+
+            This rule checks that structures that are declared by using an explicit layout attribute will align
+            correctly when marshaled to unmanaged code on 64-bit operating systems.
+        -->
+        <Rule Id="CA1900" Action="None" />
+
+        <!--
+            P/Invoke declarations should be portable
+
+            This rule evaluates the size of each parameter and the return value of a P/Invoke, and verifies that their
+            size is correct when marshaled to unmanaged code on 32-bit and 64-bit operating systems.
+        -->
+        <Rule Id="CA1901" Action="None" />
+
+        <!--
+            Use only API from targeted framework
+
+            A member or type is using a member or type that was introduced in a service pack that was not included
+            together with the targeted framework of the project.
+        -->
+        <Rule Id="CA1903" Action="None" />
+
+    </Rules>
+</RuleSet>

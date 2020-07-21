@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Maintainability Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/maintainability-warnings
+
+    Maintainability warnings support library and application maintenance.
+-->
+
+<RuleSet Name="CA15XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            Variable names should not match field names
+
+            An instance method declares a parameter or a local variable whose name matches an instance field of the
+            declaring type, which leads to errors.
+        -->
+        <Rule Id="CA1500" Action="None" />
+
+        <!--
+            Avoid excessive inheritance
+
+            A type is more than four levels deep in its inheritance hierarchy. Deeply nested type hierarchies can be
+            difficult to follow, understand, and maintain.
+        -->
+        <Rule Id="CA1501" Action="None" />
+
+        <!--
+            Avoid excessive complexity
+
+            This rule measures the number of linearly independent paths through the method, which is determined by the
+            number and complexity of conditional branches.
+        -->
+        <Rule Id="CA1502" Action="None" />
+
+        <!--
+            Review misleading field names
+
+            The name of an instance field starts with "s_", or the name of a static (Shared in Visual Basic) field
+            starts with "m_".
+        -->
+        <Rule Id="CA1504" Action="None" />
+
+        <!--
+            Avoid unmaintainable code
+
+            A type or method has a low maintainability index value. A low maintainability index indicates that a type or
+            method is probably difficult to maintain and would be a good candidate for redesign.
+        -->
+        <Rule Id="CA1505" Action="None" />
+
+        <!--
+            Avoid excessive class coupling
+
+            This rule measures class coupling by counting the number of unique type references that a type or method
+            contains.
+        -->
+        <Rule Id="CA1506" Action="None" />
+
+        <!--
+            Use nameof in place of string
+
+            A string literal is used as an argument where a nameof expression could be used.
+        -->
+        <Rule Id="CA1507" Action="None" />
+
+        <!--
+            Avoid dead conditional code
+
+            A method has conditional code that always evaluates to true or false at runtime. This leads to dead code in
+            the false branch of the condition.
+        -->
+        <Rule Id="CA1508" Action="None" />
+
+        <!--
+            Invalid entry in code metrics configuration file
+
+            Code metrics rules, such as CA1501, CA1502, CA1505 and CA1506, supplied a configuration file named
+            CodeMetricsConfig.txt that has an invalid entry.
+        -->
+        <Rule Id="CA1509" Action="None" />
+
+    </Rules>
+</RuleSet>

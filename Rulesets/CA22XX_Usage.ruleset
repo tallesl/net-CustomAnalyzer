@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Usage Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/usage-warnings
+
+    Usage warnings support proper usage of .NET.
+-->
+
+<RuleSet Name="CA22XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            Rethrow to preserve stack details
+
+            An exception is rethrown and the exception is explicitly specified in the throw statement. If an exception
+            is rethrown by specifying the exception in the throw statement, the list of method calls between the
+            original method that threw the exception and the current method is lost.
+        -->
+        <Rule Id="CA2200" Action="None" />
+
+        <!--
+            Do not raise reserved exception types
+
+            This makes the original error hard to detect and debug.
+        -->
+        <Rule Id="CA2201" Action="None" />
+
+        <!--
+            Do not dispose objects multiple times
+
+            A method implementation contains code paths that could cause multiple calls to System.IDisposable.Dispose or
+            a Dispose equivalent (such as a Close() method on some types) on the same object.
+        -->
+        <Rule Id="CA2202" Action="None" />
+
+        <!--
+            Literals should be spelled correctly
+
+            A literal string in a method body contains one or more words that are not recognized by the Microsoft
+            spelling checker library.
+        -->
+        <Rule Id="CA2204" Action="None" />
+
+        <!--
+            Use managed equivalents of Win32 API
+
+            A platform invoke method is defined and a .NET method with the equivalent functionality is available.
+        -->
+        <Rule Id="CA2205" Action="None" />
+
+        <!--
+            Initialize value type static fields inline
+
+            A value type declares an explicit static constructor. To fix a violation of this rule, initialize all static
+            data when it is declared and remove the static constructor.
+        -->
+        <Rule Id="CA2207" Action="None" />
+
+        <!--
+            Instantiate argument exceptions correctly
+
+            A call is made to the default (parameterless) constructor of an exception type that is or derives from
+            ArgumentException, or an incorrect string argument is passed to a parameterized constructor of an exception
+            type that is or derives from ArgumentException.
+        -->
+        <Rule Id="CA2208" Action="None" />
+
+        <!--
+            Assemblies should have valid strong names
+
+            The strong name protects clients from unknowingly loading an assembly that has been tampered with.
+            Assemblies without strong names should not be deployed outside very limited scenarios. If you share or
+            distribute assemblies that are not correctly signed, the assembly can be tampered with, the common language
+            runtime might not load the assembly, or the user might have to disable verification on his or her computer.
+        -->
+        <Rule Id="CA2210" Action="None" />
+
+        <!--
+            Non-constant fields should not be visible
+
+            Static fields that are not constants or read-only are not thread-safe. Access to such a field must be
+            carefully controlled and requires advanced programming techniques for synchronizing access to the class
+            object.
+        -->
+        <Rule Id="CA2211" Action="None" />
+
+        <!--
+            Do not mark serviced components with WebMethod
+
+            A method in a type that inherits from System.EnterpriseServices.ServicedComponent is marked with
+            System.Web.Services.WebMethodAttribute. Because WebMethodAttribute and a ServicedComponent method have
+            conflicting behavior and requirements for context and transaction flow, the behavior of the method will be
+            incorrect in some scenarios.
+        -->
+        <Rule Id="CA2212" Action="None" />
+
+        <!--
+            Disposable fields should be disposed
+
+            A type that implements System.IDisposable declares fields that are of types that also implement IDisposable.
+            The Dispose method of the field is not called by the Dispose method of the declaring type.
+        -->
+        <Rule Id="CA2213" Action="None" />
+
+        <!--
+            Do not call overridable methods in constructors
+
+            When a constructor calls a virtual method, it is possible that the constructor for the instance that invokes
+            the method has not executed.
+        -->
+        <Rule Id="CA2214" Action="None" />
+
+        <!--
+            Dispose methods should call base class dispose
+
+            If a type inherits from a disposable type, it must call the Dispose method of the base type from its own
+            Dispose method.
+        -->
+        <Rule Id="CA2215" Action="None" />
+
+        <!--
+            Disposable types should declare finalizer
+
+            A type that implements System.IDisposable, and has fields that suggest the use of unmanaged resources, does
+            not implement a finalizer as described by Object.Finalize.
+        -->
+        <Rule Id="CA2216" Action="None" />
+
+        <!--
+            Do not mark enums with FlagsAttribute
+
+            An externally visible enumeration is marked with FlagsAttribute, and it has one or more values that are not
+            powers of two or a combination of the other defined values on the enumeration.
+        -->
+        <Rule Id="CA2217" Action="None" />
+
+        <!--
+            Override GetHashCode on overriding Equals
+
+            GetHashCode returns a value, based on the current instance, that is suited for hashing algorithms and data
+            structures such as a hash table. Two objects that are the same type and are equal must return the same hash
+            code.
+        -->
+        <Rule Id="CA2218" Action="None" />
+
+        <!--
+            Do not raise exceptions in exception clauses
+
+            When an exception is raised in a finally or fault clause, the new exception hides the active exception. When
+            an exception is raised in a filter clause, the run time silently catches the exception. This makes the
+            original error hard to detect and debug.
+        -->
+        <Rule Id="CA2219" Action="None" />
+
+        <!--
+            Finalizers should call base class finalizer
+
+            Finalization must be propagated through the inheritance hierarchy. To guarantee this, types must call their
+            base class Finalize method in their own Finalize method.
+        -->
+        <Rule Id="CA2220" Action="None" />
+
+        <!--
+            Finalizers should be protected
+
+            Finalizers must use the family access modifier.
+        -->
+        <Rule Id="CA2221" Action="None" />
+
+        <!--
+            Do not decrease inherited member visibility
+
+            Don't change the access modifier for inherited members. Changing an inherited member to private does not
+            prevent callers from accessing the base class implementation of the method.
+        -->
+        <Rule Id="CA2222" Action="None" />
+
+        <!--
+            Members should differ by more than return type
+
+            Although the common language runtime allows the use of return types to differentiate between otherwise
+            identical members, this feature is not in the Common Language Specification, nor is it a common feature of
+            .NET programming languages.
+        -->
+        <Rule Id="CA2223" Action="None" />
+
+        <!--
+            Override equals on overloading operator equals
+
+            A public type implements the equality operator, but does not override Object.Equals.
+        -->
+        <Rule Id="CA2224" Action="None" />
+
+        <!--
+            Operator overloads have named alternates
+
+            An operator overload was detected, and the expected named alternative method was not found. The named
+            alternative member provides access to the same functionality as the operator, and is provided for developers
+            who program in languages that do not support overloaded operators.
+        -->
+        <Rule Id="CA2225" Action="None" />
+
+        <!--
+            Operators should have symmetrical overloads
+
+            A type implements the equality or inequality operator, and does not implement the opposite operator.
+        -->
+        <Rule Id="CA2226" Action="None" />
+
+        <!--
+            Collection properties should be read only
+
+            A writable collection property allows a user to replace the collection with a different collection. A
+            read-only property stops the collection from being replaced but still allows the individual members to be
+            set.
+        -->
+        <Rule Id="CA2227" Action="None" />
+
+        <!--
+            Do not ship unreleased resource formats
+
+            Resource files that were built by using pre-release versions of the .NET might not be usable by supported
+            versions of .NET.
+        -->
+        <Rule Id="CA2228" Action="None" />
+
+        <!--
+            Implement serialization constructors
+
+            To fix a violation of this rule, implement the serialization constructor. For a sealed class, make the
+            constructor private; otherwise, make it protected.
+        -->
+        <Rule Id="CA2229" Action="None" />
+
+        <!--
+            Use params for variable arguments
+
+            A public or protected type contains a public or protected method that uses the VarArgs calling convention
+            instead of the params keyword.
+        -->
+        <Rule Id="CA2230" Action="None" />
+
+        <!--
+            Overload operator equals on overriding ValueType.Equals
+
+            A value type overrides Object.Equals but does not implement the equality operator.
+        -->
+        <Rule Id="CA2231" Action="None" />
+
+        <!--
+            Mark Windows Forms entry points with STAThread
+
+            STAThreadAttribute indicates that the COM threading model for the application is a single-threaded
+            apartment. This attribute must be present on the entry point of any application that uses Windows Forms; if
+            it is omitted, the Windows components might not work correctly.
+        -->
+        <Rule Id="CA2232" Action="None" />
+
+        <!--
+            Operations should not overflow
+
+            Arithmetic operations should not be performed without first validating the operands, to make sure that the
+            result of the operation is not outside the range of possible values for the data types involved.
+        -->
+        <Rule Id="CA2233" Action="None" />
+
+        <!--
+            Pass System.Uri objects instead of strings
+
+            A call is made to a method that has a string parameter whose name contains "uri", "URI", "urn", "URN",
+            "url", or "URL". The declaring type of the method contains a corresponding method overload that has a
+            System.Uri parameter.
+        -->
+        <Rule Id="CA2234" Action="None" />
+
+        <!--
+            Mark all non-serializable fields
+
+            An instance field of a type that is not serializable is declared in a type that is serializable.
+        -->
+        <Rule Id="CA2235" Action="None" />
+
+        <!--
+            Call base class methods on ISerializable types
+
+            To fix a violation of this rule, call the base type GetObjectData method or serialization constructor from
+            the corresponding derived type method or constructor.
+        -->
+        <Rule Id="CA2236" Action="None" />
+
+        <!--
+            Mark ISerializable types with SerializableAttribute
+
+            To be recognized by the common language runtime as serializable, types must be marked with the
+            SerializableAttribute attribute even if the type uses a custom serialization routine through implementation
+            of the ISerializable interface.
+        -->
+        <Rule Id="CA2237" Action="None" />
+
+        <!--
+            Implement serialization methods correctly
+
+            A method that handles a serialization event does not have the correct signature, return type, or visibility.
+        -->
+        <Rule Id="CA2238" Action="None" />
+
+        <!--
+            Provide deserialization methods for optional fields
+
+            A type has a field that is marked with the System.Runtime.Serialization.OptionalFieldAttribute attribute,
+            and the type does not provide de-serialization event handling methods.
+        -->
+        <Rule Id="CA2239" Action="None" />
+
+        <!--
+            Implement ISerializable correctly
+
+            To fix a violation of this rule, make the GetObjectData method visible and overridable, and make sure that
+            all instance fields are included in the serialization process or explicitly marked with the
+            NonSerializedAttribute attribute.
+        -->
+        <Rule Id="CA2240" Action="None" />
+
+        <!--
+            Provide correct arguments to formatting methods
+
+            The format argument passed to System.String.Format does not contain a format item that corresponds to each
+            object argument, or vice versa.
+        -->
+        <Rule Id="CA2241" Action="None" />
+
+        <!--
+            Test for NaN correctly
+
+            This expression tests a value against Single.Nan or Double.Nan. Use Single.IsNan(Single) or
+            Double.IsNan(Double) to test the value.
+        -->
+        <Rule Id="CA2242" Action="None" />
+
+        <!--
+            Attribute string literals should parse correctly
+
+            An attribute's string literal parameter does not parse correctly for a URL, a GUID, or a version.
+        -->
+        <Rule Id="CA2243" Action="None" />
+
+        <!--
+            Do not duplicate indexed element initializations
+
+            An object initializer has more than one indexed element initializer with the same constant index. All but
+            the last initializer are redundant.
+        -->
+        <Rule Id="CA2244" Action="None" />
+
+        <!--
+            Do not assign a property to itself
+
+            A property was accidentally assigned to itself.
+        -->
+        <Rule Id="CA2245" Action="None" />
+
+        <!--
+            Do not assign a symbol and its member in the same statement
+
+            Assigning a symbol and its member, that is, a field or a property, in the same statement is not recommended.
+            It is not clear if the member access was intended to use the symbol's old value prior to the assignment or
+            the new value from the assignment in this statement.
+        -->
+        <Rule Id="CA2246" Action="None" />
+
+        <!--
+            Argument passed to TaskCompletionSource constructor should be TaskCreationOptions enum instead of
+
+            TaskContinuationOptions enum
+            TaskCompletionSource has constructors that take TaskCreationOptions that control the underlying Task, and
+            constructors that take object state that's stored in the task. Accidentally passing a
+            TaskContinuationOptions instead of a TaskCreationOptions will result in the call treating the options as
+            state.
+        -->
+        <Rule Id="CA2247" Action="None" />
+
+        <!--
+            Provide correct 'enum' argument to 'Enum.HasFlag'
+
+            The enum type passed as an argument to the HasFlag method call is different from the calling enum type.
+        -->
+        <Rule Id="CA2248" Action="None" />
+
+    </Rules>
+</RuleSet>

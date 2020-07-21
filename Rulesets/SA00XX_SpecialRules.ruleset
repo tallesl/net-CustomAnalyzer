@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Special Rules
+    https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SpecialRules.md
+
+    Rules which provide special functionality like workarounds, configuration errors, etc.
+-->
+
+<RuleSet Name="SA00XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+        <!--
+            XmlCommentAnalysisDisabled
+
+            All diagnostics of XML documentation comments has been disabled due to the current project configuration.
+        -->
+        <Rule Id="SA0001" Action="None" />
+
+        <!--
+            InvalidSettingsFile
+
+            The stylecop.json settings file could not be loaded due to a deserialization error.
+        -->
+        <Rule Id="SA0002" Action="None" />
+
+    </Rules>
+</RuleSet>

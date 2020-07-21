@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Interoperability Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/interoperability-warnings
+
+    Interoperability warnings support interaction with COM clients.
+-->
+
+<RuleSet Name="CA14XX" Description="" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            P/Invoke entry points should exist
+
+            A public or protected method is marked by using the System.Runtime.InteropServices.DllImportAttribute
+            attribute. Either the unmanaged library could not be located or the method could not be matched to a
+            function in the library.
+        -->
+        <Rule Id="CA1400" Action="None" />
+
+        <!--
+            P/Invokes should not be visible
+
+            A public or protected method in a public type has the System.Runtime.InteropServices.DllImportAttribute
+            attribute (also implemented by the Declare keyword in Visual Basic). Such methods should not be exposed.
+        -->
+        <Rule Id="CA1401" Action="None" />
+
+        <!--
+            Avoid overloads in COM visible interfaces
+
+            When overloaded methods are exposed to COM clients, only the first method overload retains its name.
+            Subsequent overloads are uniquely renamed by appending to the name an underscore character (_) and an
+            integer that corresponds to the order of declaration of the overload.
+        -->
+        <Rule Id="CA1402" Action="None" />
+
+        <!--
+            Auto layout types should not be COM visible
+
+            A COM-visible value type is marked by using the System.Runtime.InteropServices.StructLayoutAttribute
+            attribute set to LayoutKind.Auto. The layout of these types can change between .NET versions, which will
+            break COM clients that expect a specific layout.
+        -->
+        <Rule Id="CA1403" Action="None" />
+
+        <!--
+            Call GetLastError immediately after P/Invoke
+
+            A call is made to the Marshal.GetLastWin32Error method or the equivalent Win32 GetLastError function, and
+            the immediately previous call is not to a platform invoke method.
+        -->
+        <Rule Id="CA1404" Action="None" />
+
+        <!--
+            COM visible type base types should be COM visible
+
+            A COM-visible type derives from a type that is not COM-visible.
+        -->
+        <Rule Id="CA1405" Action="None" />
+
+        <!--
+            Avoid Int64 arguments for Visual Basic 6 clients
+
+            Visual Basic 6 COM clients cannot access 64-bit integers.
+        -->
+        <Rule Id="CA1406" Action="None" />
+
+        <!--
+            Avoid static members in COM visible types
+
+            COM does not support static methods.
+        -->
+        <Rule Id="CA1407" Action="None" />
+
+        <!--
+            Do not use AutoDual ClassInterfaceType
+
+            Types that use a dual interface enable clients to bind to a specific interface layout. Any changes in a
+            future version to the layout of the type or any base types will break COM clients that bind to the
+            interface. By default, if the ClassInterfaceAttribute attribute is not specified, a dispatch-only interface
+            is used.
+        -->
+        <Rule Id="CA1408" Action="None" />
+
+        <!--
+            Com visible types should be creatable
+
+            A reference type that is specifically marked as visible to COM contains a public parameterized constructor
+            but does not contain a public default (parameterless) constructor. A type without a public default
+            constructor is not creatable by COM clients.
+        -->
+        <Rule Id="CA1409" Action="None" />
+
+        <!--
+            COM registration methods should be matched
+
+            A type declares a method that is marked by using the
+            System.Runtime.InteropServices.ComRegisterFunctionAttribute attribute but does not declare a method that is
+            marked by using the System.Runtime.InteropServices.ComUnregisterFunctionAttribute attribute, or vice versa.
+        -->
+        <Rule Id="CA1410" Action="None" />
+
+        <!--
+            COM registration methods should not be visible
+
+            A method that is marked by using the System.Runtime.InteropServices.ComRegisterFunctionAttribute attribute
+            or the System.Runtime.InteropServices.ComUnregisterFunctionAttribute attribute is externally visible.
+        -->
+        <Rule Id="CA1411" Action="None" />
+
+        <!--
+            Mark ComSource Interfaces as IDispatch
+
+            A type is marked by using the System.Runtime.InteropServices.ComSourceInterfacesAttribute attribute, and at
+            least one of the specified interfaces is not marked by using the
+            System.Runtime.InteropServices.InterfaceTypeAttribute attribute set to
+            ComInterfaceType.InterfaceIsIDispatch.
+        -->
+        <Rule Id="CA1412" Action="None" />
+
+        <!--
+            Avoid non-public fields in COM visible value types
+
+            Nonpublic instance fields of COM-visible value types are visible to COM clients. Review the content of the
+            fields for information that should not be exposed, or that will have unintended design or security effects.
+        -->
+        <Rule Id="CA1413" Action="None" />
+
+        <!--
+            Mark boolean P/Invoke arguments with MarshalAs
+
+            The Boolean data type has multiple representations in unmanaged code.
+        -->
+        <Rule Id="CA1414" Action="None" />
+
+        <!--
+            Declare P/Invokes correctly
+
+            This rule looks for platform invoke method declarations that target Win32 functions that have a pointer to
+            an OVERLAPPED structure parameter and the corresponding managed parameter is not a pointer to a
+            System.Threading.NativeOverlapped structure.
+        -->
+        <Rule Id="CA1415" Action="None" />
+
+    </Rules>
+</RuleSet>

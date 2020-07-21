@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Description>Custom FxCop and StyleCop rulesets.</Description>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Version>0.1.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="Rulesets/*" Pack="true" />
+        <Content Include="Rulesets.props" PackagePath="build/Rulesets.props" />
+        <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.0.0" />
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
+    </ItemGroup>
+
+</Project>

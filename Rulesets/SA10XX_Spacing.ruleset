@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Spacing Rules
+    https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SpacingRules.md
+
+    Rules which enforce spacing requirements around keywords and symbols in the code.
+-->
+
+<RuleSet Name="SA10XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+        <!--
+            KeywordsMustBeSpacedCorrectly
+
+            The spacing around a C# keyword is incorrect.
+        -->
+        <Rule Id="SA1000" Action="None" />
+
+        <!--
+            CommasMustBeSpacedCorrectly
+
+            The spacing around a comma is incorrect, within a C# code file.
+        -->
+        <Rule Id="SA1001" Action="None" />
+
+        <!--
+            SemicolonsMustBeSpacedCorrectly
+
+            The spacing around a semicolon is incorrect, within a C# code file.
+        -->
+        <Rule Id="SA1002" Action="None" />
+
+        <!--
+            SymbolsMustBeSpacedCorrectly
+
+            The spacing around an operator symbol is incorrect, within a C# code file.
+        -->
+        <Rule Id="SA1003" Action="None" />
+
+        <!--
+            DocumentationLinesMustBeginWithSingleSpace
+
+            A line within a documentation header above a C# element does not begin with a single space.
+        -->
+        <Rule Id="SA1004" Action="None" />
+
+        <!--
+            SingleLineCommentsMustBeginWithSingleSpace
+
+            A single-line comment within a C# code file does not begin with a single space.
+        -->
+        <Rule Id="SA1005" Action="None" />
+
+        <!--
+            PreprocessorKeywordsMustNotBePrecededBySpace
+
+            A C# preprocessor-type keyword is preceded by space.
+        -->
+        <Rule Id="SA1006" Action="None" />
+
+        <!--
+            OperatorKeywordMustBeFollowedBySpace
+
+            The operator keyword within a C# operator overload method is not followed by any whitespace.
+        -->
+        <Rule Id="SA1007" Action="None" />
+
+        <!--
+            OpeningParenthesisMustBeSpacedCorrectly
+
+            An opening parenthesis within a C# statement is not spaced correctly.
+        -->
+        <Rule Id="SA1008" Action="None" />
+
+        <!--
+            ClosingParenthesisMustBeSpacedCorrectly
+
+            A closing parenthesis within a C# statement is not spaced correctly.
+        -->
+        <Rule Id="SA1009" Action="None" />
+
+        <!--
+            OpeningSquareBracketsMustBeSpacedCorrectly
+
+            An opening square bracket within a C# statement is not spaced correctly.
+        -->
+        <Rule Id="SA1010" Action="None" />
+
+        <!--
+            ClosingSquareBracketsMustBeSpacedCorrectly
+
+            A closing square bracket within a C# statement is not spaced correctly.
+        -->
+        <Rule Id="SA1011" Action="None" />
+
+        <!--
+            OpeningBracesMustBeSpacedCorrectly
+
+            An opening brace within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1012" Action="None" />
+
+        <!--
+            ClosingBracesMustBeSpacedCorrectly
+
+            A closing brace within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1013" Action="None" />
+
+        <!--
+            OpeningGenericBracketsMustBeSpacedCorrectly
+
+            An opening generic bracket within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1014" Action="None" />
+
+        <!--
+            ClosingGenericBracketsMustBeSpacedCorrectly
+
+            A closing generic bracket within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1015" Action="None" />
+
+        <!--
+            OpeningAttributeBracketsMustBeSpacedCorrectly
+
+            An opening attribute bracket within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1016" Action="None" />
+
+        <!--
+            ClosingAttributeBracketsMustBeSpacedCorrectly
+
+            A closing attribute bracket within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1017" Action="None" />
+
+        <!--
+            NullableTypeSymbolsMustNotBePrecededBySpace
+
+            A nullable type symbol within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1018" Action="None" />
+
+        <!--
+            MemberAccessSymbolsMustBeSpacedCorrectly
+
+            The spacing around a member access symbol is incorrect, within a C# code file.
+        -->
+        <Rule Id="SA1019" Action="None" />
+
+        <!--
+            IncrementDecrementSymbolsMustBeSpacedCorrectly
+
+            An increment or decrement symbol within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1020" Action="None" />
+
+        <!--
+            NegativeSignsMustBeSpacedCorrectly
+
+            A negative sign within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1021" Action="None" />
+
+        <!--
+            PositiveSignsMustBeSpacedCorrectly
+
+            A positive sign within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1022" Action="None" />
+
+        <!--
+            DereferenceAndAccessOfMustBeSpacedCorrectly
+
+            A dereference symbol or an access-of symbol within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1023" Action="None" />
+
+        <!--
+            ColonsMustBeSpacedCorrectly
+
+            A colon within a C# element is not spaced correctly.
+        -->
+        <Rule Id="SA1024" Action="None" />
+
+        <!--
+            CodeMustNotContainMultipleWhitespaceInARow
+
+            The code contains multiple whitespace characters in a row.
+        -->
+        <Rule Id="SA1025" Action="None" />
+
+        <!--
+            CodeMustNotContainSpaceAfterNewKeywordInImplicitlyTypedArrayAllocation
+
+            An implicitly typed new array allocation within a C# code file is not spaced correctly.
+        -->
+        <Rule Id="SA1026" Action="None" />
+
+        <!--
+            UseTabsCorrectly
+
+            The code contains a tab or space character which is not consistent with the current project settings.
+        -->
+        <Rule Id="SA1027" Action="None" />
+
+        <!--
+            CodeMustNotContainTrailingWhitespace
+
+            A line of code ends with a space, tab, or other whitespace characters before the end of line character(s).
+        -->
+        <Rule Id="SA1028" Action="None" />
+
+    </Rules>
+</RuleSet>

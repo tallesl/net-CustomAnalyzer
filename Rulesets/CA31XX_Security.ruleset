@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Security Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/security-warnings
+
+    Security warnings support safer libraries and applications. These warnings help prevent security flaws in your
+    program. If you disable any of these warnings, you should clearly mark the reason in code and also inform the
+    designated security officer for your development project.
+-->
+
+<RuleSet Name="CA31XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            Mark verb handlers with ValidateAntiForgeryToken
+
+            When designing an ASP.NET MVC controller, be mindful of cross-site request forgery attacks. A cross-site
+            request forgery attack can send malicious requests from an authenticated user to your ASP.NET MVC
+            controller.
+        -->
+        <Rule Id="CA3147" Action="None" />
+
+    </Rules>
+</RuleSet>

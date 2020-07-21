@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Security Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/security-warnings
+
+    Security warnings support safer libraries and applications. These warnings help prevent security flaws in your
+    program. If you disable any of these warnings, you should clearly mark the reason in code and also inform the
+    designated security officer for your development project.
+-->
+
+<RuleSet Name="CA23XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            Do not use insecure deserializer BinaryFormatter
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2300" Action="None" />
+
+        <!--
+            Do not call BinaryFormatter.Deserialize without first setting BinaryFormatter.Binder
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2301" Action="None" />
+
+        <!--
+            Ensure BinaryFormatter.Binder is set before calling BinaryFormatter.Deserialize
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2302" Action="None" />
+
+        <!--
+            Do not use insecure deserializer LosFormatter
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2305" Action="None" />
+
+        <!--
+            Do not use insecure deserializer NetDataContractSerializer
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2310" Action="None" />
+
+        <!--
+            Do not deserialize without first setting NetDataContractSerializer.Binder
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2311" Action="None" />
+
+        <!--
+            Ensure NetDataContractSerializer.Binder is set before deserializing
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2312" Action="None" />
+
+        <!--
+            Do not use insecure deserializer ObjectStateFormatter
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2315" Action="None" />
+
+        <!--
+            Do not deserialize with JavaScriptSerializer using a SimpleTypeResolver
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2321" Action="None" />
+
+        <!--
+            Ensure JavaScriptSerializer is not initialized with SimpleTypeResolver before deserializing
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2322" Action="None" />
+
+        <!--
+            Do not use TypeNameHandling values other than None
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2326" Action="None" />
+
+        <!--
+            Do not use insecure JsonSerializerSettings
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2327" Action="None" />
+
+        <!--
+            Ensure that JsonSerializerSettings are secure
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2328" Action="None" />
+
+        <!--
+            Do not deserialize with JsonSerializer using an insecure configuration
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2329" Action="None" />
+
+        <!--
+            Ensure that JsonSerializer has a secure configuration when deserializing
+
+            Insecure deserializers are vulnerable when deserializing untrusted data. An attacker could modify the
+            serialized data to include unexpected types to inject objects with malicious side effects.
+        -->
+        <Rule Id="CA2330" Action="None" />
+
+    </Rules>
+</RuleSet>

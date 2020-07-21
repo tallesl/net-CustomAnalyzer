@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Naming Rules
+    https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/NamingRules.md
+
+    Rules which enforce naming requirements for members, types, and variables.
+-->
+
+<RuleSet Name="SA13XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+        <!--
+            ElementMustBeginWithUpperCaseLetter
+
+            The name of a C# element does not begin with an upper-case letter.
+        -->
+        <Rule Id="SA1300" Action="None" />
+
+        <!--
+            ElementMustBeginWithLowerCaseLetter
+
+            There are currently no situations in which this rule will fire.
+        -->
+        <Rule Id="SA1301" Action="None" />
+
+        <!--
+            InterfaceNamesMustBeginWithI
+
+            The name of a C# interface does not begin with the capital letter I.
+        -->
+        <Rule Id="SA1302" Action="None" />
+
+        <!--
+            ConstFieldNamesMustBeginWithUpperCaseLetter
+
+            The name of a constant C# field should begin with an upper-case letter.
+        -->
+        <Rule Id="SA1303" Action="None" />
+
+        <!--
+            NonPrivateReadonlyFieldsMustBeginWithUpperCaseLetter
+
+            The name of a non-private readonly C# field should being with an upper-case letter.
+        -->
+        <Rule Id="SA1304" Action="None" />
+
+        <!--
+            FieldNamesMustNotUseHungarianNotation
+
+            The name of a field or variable in C# uses Hungarian notation.
+        -->
+        <Rule Id="SA1305" Action="None" />
+
+        <!--
+            FieldNamesMustBeginWithLowerCaseLetter
+
+            The name of a field in C# does not begin with a lower-case letter.
+        -->
+        <Rule Id="SA1306" Action="None" />
+
+        <!--
+            AccessibleFieldsMustBeginWithUpperCaseLetter
+
+            The name of a public or internal field in C# does not begin with an upper-case letter.
+        -->
+        <Rule Id="SA1307" Action="None" />
+
+        <!--
+            VariableNamesMustNotBePrefixed
+
+            A field name in C# is prefixed with *m_* or *s_*.
+        -->
+        <Rule Id="SA1308" Action="None" />
+
+        <!--
+            FieldNamesMustNotBeginWithUnderscore
+
+            A field name in C# begins with an underscore.
+        -->
+        <Rule Id="SA1309" Action="None" />
+
+        <!--
+            FieldNamesMustNotContainUnderscore
+
+            A field name in C# contains an underscore.
+        -->
+        <Rule Id="SA1310" Action="None" />
+
+        <!--
+            StaticReadonlyFieldsMustBeginWithUpperCaseLetter
+
+            The name of a static readonly field does not begin with an upper-case letter.
+        -->
+        <Rule Id="SA1311" Action="None" />
+
+        <!--
+            VariableNamesMustBeginWithLowerCaseLetter
+
+            The name of a variable in C# does not begin with a lower-case letter.
+        -->
+        <Rule Id="SA1312" Action="None" />
+
+        <!--
+            ParameterNamesMustBeginWithLowerCaseLetter
+
+            The name of a parameter in C# does not begin with a lower-case letter.
+        -->
+        <Rule Id="SA1313" Action="None" />
+
+        <!--
+            TypeParameterNamesMustBeginWithT
+
+            The name of a C# type parameter does not begin with the capital letter 
+        .-->
+        <Rule Id="SA1314" Action="None" />
+
+        <!--
+            TupleElementNamesShouldUseCorrectCasing
+
+            Element names within a tuple type should have the correct casing.
+        .-->
+        <Rule Id="SA1316" Action="None" />
+
+    </Rules>
+</RuleSet>

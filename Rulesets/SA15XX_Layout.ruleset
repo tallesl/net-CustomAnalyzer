@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Layout Rules
+    https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/LayoutRules.md
+
+    Rules which enforce code layout and line spacing.
+-->
+
+<RuleSet Name="SA15XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+        <!--
+            BracesForMultiLineStatementsMustNotShareLine
+
+            The opening or closing brace within a C# statement, element, or expression is not placed on its own line.
+        -->
+        <Rule Id="SA1500" Action="None" />
+
+        <!--
+            StatementMustNotBeOnSingleLine
+
+            A C# statement containing opening and closing braces is written completely on a single line.
+        -->
+        <Rule Id="SA1501" Action="None" />
+
+        <!--
+            ElementMustNotBeOnSingleLine
+
+            A C# element containing opening and closing braces is written completely on a single line.
+        -->
+        <Rule Id="SA1502" Action="None" />
+
+        <!--
+            BracesMustNotBeOmitted
+
+            The opening and closing braces for a C# statement have been omitted.
+        -->
+        <Rule Id="SA1503" Action="None" />
+
+        <!--
+            AllAccessorsMustBeSingleLineOrMultiLine
+
+            Within a C# property, indexer or event, at least one of the child accessors is written on a single line, and
+            at least one of the child accessors is written across multiple lines.
+        -->
+        <Rule Id="SA1504" Action="None" />
+
+        <!--
+            OpeningBracesMustNotBeFollowedByBlankLine
+
+            An opening brace within a C# element, statement, or expression is followed by a blank line.
+        -->
+        <Rule Id="SA1505" Action="None" />
+
+        <!--
+            ElementDocumentationHeadersMustNotBeFollowedByBlankLine
+
+            An element documentation header above a C# element is followed by a blank line.
+        -->
+        <Rule Id="SA1506" Action="None" />
+
+        <!--
+            CodeMustNotContainMultipleBlankLinesInARow
+
+            The C# code contains multiple blank lines in a row.
+        -->
+        <Rule Id="SA1507" Action="None" />
+
+        <!--
+            ClosingBracesMustNotBePrecededByBlankLine
+
+            A closing brace within a C# element, statement, or expression is preceded by a blank line.
+        -->
+        <Rule Id="SA1508" Action="None" />
+
+        <!--
+            OpeningBracesMustNotBePrecededByBlankLine
+
+            An opening brace within a C# element, statement, or expression is preceded by a blank line.
+        -->
+        <Rule Id="SA1509" Action="None" />
+
+        <!--
+            ChainedStatementBlocksMustNotBePrecededByBlankLine
+
+            Chained C# statements are separated by a blank line.
+        -->
+        <Rule Id="SA1510" Action="None" />
+
+        <!--
+            WhileDoFooterMustNotBePrecededByBlankLine
+
+            The while footer at the bottom of a do-while statement is separated from the statement by a blank line.
+        -->
+        <Rule Id="SA1511" Action="None" />
+
+        <!--
+            SingleLineCommentsMustNotBeFollowedByBlankLine
+
+            A single-line comment within C# code is followed by a blank line.
+        -->
+        <Rule Id="SA1512" Action="None" />
+
+        <!--
+            ClosingBraceMustBeFollowedByBlankLine
+
+            A closing brace within a C# element, statement, or expression is not followed by a blank line.
+        -->
+        <Rule Id="SA1513" Action="None" />
+
+        <!--
+            ElementDocumentationHeaderMustBePrecededByBlankLine
+
+            An element documentation header above a C# element is not preceded by a blank line.
+        -->
+        <Rule Id="SA1514" Action="None" />
+
+        <!--
+            SingleLineCommentMustBePrecededByBlankLine
+
+            A single-line comment within C# code is not preceded by a blank line.
+        -->
+        <Rule Id="SA1515" Action="None" />
+
+        <!--
+            ElementsMustBeSeparatedByBlankLine
+
+            Adjacent C# elements are not separated by a blank line.
+        -->
+        <Rule Id="SA1516" Action="None" />
+
+        <!--
+            CodeMustNotContainBlankLinesAtStartOfFile
+
+            The code file has blank lines at the start.
+        -->
+        <Rule Id="SA1517" Action="None" />
+
+        <!--
+            UseLineEndingsCorrectlyAtEndOfFile
+
+            The line endings at the end of a file do not match the settings for the project.
+        -->
+        <Rule Id="SA1518" Action="None" />
+
+        <!--
+            BracesMustNotBeOmittedFromMultiLineChildStatement
+
+            The opening and closing braces for a multi-line C# statement have been omitted.
+        -->
+        <Rule Id="SA1519" Action="None" />
+
+        <!--
+            UseBracesConsistently
+
+            The opening and closing braces of a chained `if`/`else if`/`else` construct were included for some clauses,
+            but omitted for other
+        .-->
+        <Rule Id="SA1520" Action="None" />
+
+    </Rules>
+</RuleSet>

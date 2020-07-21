@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Ordering Rules
+    https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/OrderingRules.md
+
+    Rules which enforce a standard ordering scheme for code contents.
+-->
+
+<RuleSet Name="SA12XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+        <!--
+            UsingDirectivesMustBePlacedCorrectly
+
+            A C# using directive is placed outside of a namespace element.
+        -->
+        <Rule Id="SA1200" Action="None" />
+
+        <!--
+            ElementsMustAppearInTheCorrectOrder
+
+            An element within a C# code file is out of order in relation to the other elements in the code.
+        -->
+        <Rule Id="SA1201" Action="None" />
+
+        <!--
+            ElementsMustBeOrderedByAccess
+
+            An element within a C# code file is out of order within regard to access level, in relation to other
+            elements in the cod
+        .-->
+        <Rule Id="SA1202" Action="None" />
+
+        <!--
+            ConstantsMustAppearBeforeFields
+
+            A constant field is placed beneath a non-constant field.
+        -->
+        <Rule Id="SA1203" Action="None" />
+
+        <!--
+            StaticElementsMustAppearBeforeInstanceElements
+
+            A static element is positioned beneath an instance element of the same type.
+        -->
+        <Rule Id="SA1204" Action="None" />
+
+        <!--
+            PartialElementsMustDeclareAccess
+
+            The partial element does not have an access modifier defined.
+        -->
+        <Rule Id="SA1205" Action="None" />
+
+        <!--
+            DeclarationKeywordsMustFollowOrder
+
+            The keywords within the declaration of an element do not follow a standard ordering scheme.
+        -->
+        <Rule Id="SA1206" Action="None" />
+
+        <!--
+            ProtectedMustComeBeforeInternal
+
+            The keyword *protected* is positioned after the keyword *internal* within the declaration of a protected
+            internal C# element.
+        -->
+        <Rule Id="SA1207" Action="None" />
+
+        <!--
+            SystemUsingDirectivesMustBePlacedBeforeOtherUsingDirectives
+
+            A using directive which declares a member of the *System* namespace appears after a using directive which
+            declares a member of a different namespace, within a C# code file.
+        -->
+        <Rule Id="SA1208" Action="None" />
+
+        <!--
+            UsingAliasDirectivesMustBePlacedAfterOtherUsingDirectives
+
+            A using-alias directive is positioned before a regular using directive.
+        -->
+        <Rule Id="SA1209" Action="None" />
+
+        <!--
+            UsingDirectivesMustBeOrderedAlphabeticallyByNamespace
+
+            The using directives within a C# code file are not sorted alphabetically by namespace.
+        -->
+        <Rule Id="SA1210" Action="None" />
+
+        <!--
+            UsingAliasDirectivesMustBeOrderedAlphabeticallyByAliasName
+
+            The using-alias directives within a C# code file are not sorted alphabetically by alias name.
+        -->
+        <Rule Id="SA1211" Action="None" />
+
+        <!--
+            PropertyAccessorsMustFollowOrder
+
+            A get accessor appears after a set accessor within a property or indexer.
+        -->
+        <Rule Id="SA1212" Action="None" />
+
+        <!--
+            EventAccessorsMustFollowOrder
+
+            An add accessor appears after a remove accessor within an event.
+        -->
+        <Rule Id="SA1213" Action="None" />
+
+        <!--
+            ReadonlyElementsMustAppearBeforeNonReadonlyElements
+
+            A readonly field is positioned beneath a non-readonly field.
+        -->
+        <Rule Id="SA1214" Action="None" />
+
+        <!--
+            InstanceReadonlyElementsMustAppearBeforeInstanceNonReadonlyElements
+
+            An instance readonly element is positioned beneath an instance non-readonly element of the same type.
+        -->
+        <Rule Id="SA1215" Action="None" />
+
+        <!--
+            UsingStaticDirectivesMustBePlacedAtTheCorrectLocation
+
+            A `using static` directive is positioned at the wrong location (before a regular using directive or after an
+            alias using directive).
+        -->
+        <Rule Id="SA1216" Action="None" />
+
+        <!--
+            UsingStaticDirectivesMustBeOrderedAlphabetically
+
+            The `using static` directives within a C# code file are not sorted alphabetically by full type name.
+        -->
+        <Rule Id="SA1217" Action="None" />
+
+    </Rules>
+</RuleSet>

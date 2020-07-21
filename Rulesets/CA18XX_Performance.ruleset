@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Performance Warnings
+    https://docs.microsoft.com/visualstudio/code-quality/performance-warnings
+
+    Performance warnings support high-performance libraries and applications.
+-->
+
+<RuleSet Name="18XX" Description="" ToolsVersion="14.0">
+    <Rules AnalyzerId="Microsoft.Analyzers.ManagedCodeAnalysis" RuleNamespace="Microsoft.Rules.Managed">
+
+        <!--
+            Do not cast unnecessarily
+
+            Duplicate casts decrease performance, especially when the casts are performed in compact iteration
+            statements.
+        -->
+        <Rule Id="CA1800" Action="None" />
+
+        <!--
+            Review unused parameters
+
+            A method signature includes a parameter that is not used in the method body.
+        -->
+        <Rule Id="CA1801" Action="None" />
+
+        <!--
+            Use Literals Where Appropriate
+
+            A field is declared static and read-only (Shared and ReadOnly in Visual Basic), and is initialized with a
+            value that is computable at compile time. Because the value that is assigned to the targeted field is
+            computable at compile time, change the declaration to a const (Const in Visual Basic) field so that the
+            value is computed at compile time instead of at run time.
+        -->
+        <Rule Id="CA1802" Action="None" />
+
+        <!--
+            Remove unused locals
+
+            Unused local variables and unnecessary assignments increase the size of an assembly and decrease
+            performance.
+        -->
+        <Rule Id="CA1804" Action="None" />
+
+        <!--
+            Do not ignore method results
+
+            A new object is created but never used, or a method that creates and returns a new string is called and the
+            new string is never used, or a Component Object Model (COM) or P/Invoke method returns an HRESULT or error
+            code that is never used.
+        -->
+        <Rule Id="CA1806" Action="None" />
+
+        <!--
+            Avoid excessive locals
+
+            A common performance optimization is to store a value in a processor register instead of memory, which is
+            referred to as "enregistering the value". To increase the chance that all local variables are enregistered,
+            limit the number of local variables to 64.
+        -->
+        <Rule Id="CA1809" Action="None" />
+
+        <!--
+            Initialize reference type static fields inline
+
+            When a type declares an explicit static constructor, the just-in-time (JIT) compiler adds a check to each
+            static method and instance constructor of the type to make sure that the static constructor was previously
+            called. Static constructor checks can decrease performance.
+        -->
+        <Rule Id="CA1810" Action="None" />
+
+        <!--
+            Avoid uncalled private code
+
+            A private or internal (assembly-level) member does not have callers in the assembly, it is not invoked by
+            the common language runtime, and it is not invoked by a delegate.
+        -->
+        <Rule Id="CA1811" Action="None" />
+
+        <!--
+            Avoid uninstantiated internal classes
+
+            An instance of an assembly-level type is not created by code in the assembly.
+        -->
+        <Rule Id="CA1812" Action="None" />
+
+        <!--
+            Avoid unsealed attributes
+
+            .NET provides methods for retrieving custom attributes. By default, these methods search the attribute
+            inheritance hierarchy. Sealing the attribute eliminates the search through the inheritance hierarchy and can
+            improve performance.
+        -->
+        <Rule Id="CA1813" Action="None" />
+
+        <!--
+            Prefer jagged arrays over multidimensional
+
+            A jagged array is an array whose elements are arrays. The arrays that make up the elements can be of
+            different sizes, which can result in less wasted space for some sets of data.
+        -->
+        <Rule Id="CA1814" Action="None" />
+
+        <!--
+            Override equals and operator equals on value types
+
+            For value types, the inherited implementation of Equals uses the Reflection library and compares the
+            contents of all fields. Reflection is computationally expensive, and comparing every field for equality
+            might be unnecessary. If you expect users to compare or sort instances, or to use instances as hash table
+            keys, your value type should implement Equals.
+        -->
+        <Rule Id="CA1815" Action="None" />
+
+        <!--
+            Call GC.SuppressFinalize correctly
+
+            A method that is an implementation of Dispose does not call GC.SuppressFinalize, or a method that is not an
+            implementation of Dispose calls GC.SuppressFinalize, or a method calls GC.SuppressFinalize and passes
+            something other than this (Me in Visual Basic).
+        -->
+        <Rule Id="CA1816" Action="None" />
+
+        <!--
+            Properties should not return arrays
+
+            Arrays that are returned by properties are not write-protected, even if the property is read-only. To keep
+            the array tamper-proof, the property must return a copy of the array. Typically, users will not understand
+            the adverse performance implications of calling such a property.
+        -->
+        <Rule Id="CA1819" Action="None" />
+
+        <!--
+            Test for empty strings using string length
+
+            Comparing strings by using the String.Length property or the String.IsNullOrEmpty method is significantly
+            faster than using Equals.
+        -->
+        <Rule Id="CA1820" Action="None" />
+
+        <!--
+            Remove empty finalizers
+
+            Whenever you can, avoid finalizers because of the additional performance overhead that is involved in
+            tracking object lifetime. An empty finalizer incurs added overhead without any benefit.
+        -->
+        <Rule Id="CA1821" Action="None" />
+
+        <!--
+            Mark members as static
+
+            Members that do not access instance data or call instance methods can be marked as static (Shared in Visual
+            Basic). After you mark the methods as static, the compiler will emit nonvirtual call sites to these members.
+            This can give you a measurable performance gain for performance-sensitive code.
+        -->
+        <Rule Id="CA1822" Action="None" />
+
+        <!--
+            Avoid unused private fields
+
+            Private fields were detected that do not appear to be accessed in the assembly.
+        -->
+        <Rule Id="CA1823" Action="None" />
+
+        <!--
+            Mark assemblies with NeutralResourcesLanguageAttribute
+
+            The NeutralResourcesLanguage attribute informs the ResourceManager of the language that was used to display
+            the resources of a neutral culture for an assembly. This improves lookup performance for the first resource
+            that you load and can reduce your working set.
+        -->
+        <Rule Id="CA1824" Action="None" />
+
+        <!--
+            Avoid zero-length array allocations
+
+            Initializing a zero-length array leads to unnecessary memory allocation. Instead, use the statically
+            allocated empty array instance by calling Array.Empty. The memory allocation is shared across all
+            invocations of this method.
+        -->
+        <Rule Id="CA1825" Action="None" />
+
+        <!--
+            Use property instead of Linq Enumerable method
+
+            Enumerable LINQ method was used on a type that supports an equivalent, more efficient property.
+        -->
+        <Rule Id="CA1826" Action="None" />
+
+        <!--
+            Do not use Count/LongCount when Any can be used
+
+            Count or LongCount method was used where Any method would be more efficient.
+        -->
+        <Rule Id="CA1827" Action="None" />
+
+        <!--
+            Do not use CountAsync/LongCountAsync when AnyAsync can be used
+
+            CountAsync or LongCountAsync method was used where AnyAsync method would be more efficient.
+        -->
+        <Rule Id="CA1828" Action="None" />
+
+        <!--
+            Use Length/Count property instead of Enumerable.Count method
+
+            Count LINQ method was used on a type that supports an equivalent, more efficient Length or Count property.
+        -->
+        <Rule Id="CA1829" Action="None" />
+
+        <!--
+            Prefer strongly-typed Append and Insert method overloads on StringBuilder
+
+            Append and Insert provide overloads for multiple types beyond System.String. When possible, prefer the
+            strongly-typed overloads over using ToString() and the string-based overload.
+        -->
+        <Rule Id="CA1830" Action="None" />
+
+        <!--
+            Use AsSpan instead of Range-based indexers for string when appropriate
+
+            When using a range-indexer on a string and implicitly assigning the value to a ReadOnlySpan<char> type, the
+            method Substring will be used instead of Slice, which produces a copy of requested portion of the string.
+        -->
+        <Rule Id="CA1831" Action="None" />
+
+        <!--
+            Use AsSpan or AsMemory instead of Range-based indexers for getting ReadOnlySpan or ReadOnlyMemory portion of
+
+            an array
+            When using a range-indexer on an array and implicitly assigning the value to a ReadOnlySpan<T> or
+            ReadOnlyMemory<T> type, the method GetSubArray will be used instead of Slice, which produces a copy of
+            requested portion of the array.
+        -->
+        <Rule Id="CA1832" Action="None" />
+
+        <!--
+            Use AsSpan or AsMemory instead of Range-based indexers for getting Span or Memory portion of an array
+
+            When using a range-indexer on an array and implicitly assigning the value to a Span<T> or Memory<T> type,
+            the method GetSubArray will be used instead of Slice, which produces a copy of requested portion of the
+            array.
+        -->
+        <Rule Id="CA1833" Action="None" />
+
+        <!--
+            Prefer the 'Memory'-based overloads for 'ReadAsync' and 'WriteAsync'
+
+            'Stream' has a 'ReadAsync' overload that takes a 'Memory<Byte>' as the first argument, and a 'WriteAsync'
+            overload that takes a 'ReadOnlyMemory<Byte>' as the first argument. Prefer calling the memory based
+            overloads, which are more efficient.
+        -->
+        <Rule Id="CA1835" Action="None" />
+
+    </Rules>
+</RuleSet>

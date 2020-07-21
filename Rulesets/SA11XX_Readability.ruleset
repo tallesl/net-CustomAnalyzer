@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Readability Rules
+    https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/ReadabilityRules.md
+
+    Rules which ensure that the code is well-formatted and readable.
+-->
+
+<RuleSet Name="SA11XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+        <!--
+            DoNotPrefixCallsWithBaseUnlessLocalImplementationExists
+
+            A call to a member from an inherited class begins with `base.`, and the local class does not contain an
+            override or implementation of the member.
+        -->
+        <Rule Id="SA1100" Action="None" />
+
+        <!--
+            PrefixLocalCallsWithThis
+
+            A call to an instance member of the local class or a base class is not prefixed with 'this.', within a C#
+            code file.
+        -->
+        <Rule Id="SA1101" Action="None" />
+
+        <!--
+            QueryClauses
+
+            A C# query clause does not begin on the same line as the previous clause, or on the next line.
+        -->
+        <Rule Id="SA1102" Action="None" />
+
+        <!--
+            QueryClauses
+
+            The clauses within a C# query expression are not all placed on the same line, and each clause is not placed
+            on its own line.
+        -->
+        <Rule Id="SA1103" Action="None" />
+
+        <!--
+            QueryClauses
+
+            A clause within a C# query expression begins on the same line as the previous clause, when the previous
+            clause spans across multiple lines.
+        -->
+        <Rule Id="SA1104" Action="None" />
+
+        <!--
+            QueryClauses
+
+            A clause within a C# query expression spans across multiple lines, and does not begin on its own line.
+        -->
+        <Rule Id="SA1105" Action="None" />
+
+        <!--
+            CodeMustNotContainEmptyStatements
+
+            The C# code contains an extra semicolon.
+        -->
+        <Rule Id="SA1106" Action="None" />
+
+        <!--
+            CodeMustNotContainMultipleStatementsOnOneLine
+
+            The C# code contains more than one statement on a single line.
+        -->
+        <Rule Id="SA1107" Action="None" />
+
+        <!--
+            BlockStatementsMustNotContainEmbeddedComments
+
+            A C# statement contains a comment between the declaration of the statement and the opening brace of the
+            statement.
+        -->
+        <Rule Id="SA1108" Action="None" />
+
+        <!--
+            BlockStatementsMustNotContainEmbeddedRegions
+
+            A C# statement contains a region tag between the declaration of the statement and the opening brace of the
+            statement.
+        -->
+        <Rule Id="SA1109" Action="None" />
+
+        <!--
+            OpeningParenthesisMustBeOnDeclarationLine
+
+            The opening parenthesis or bracket in a call to a C# method or indexer, or the declaration of a method or
+            indexer, is not placed on the same line as the method or indexer nam
+        .-->
+        <Rule Id="SA1110" Action="None" />
+
+        <!--
+            ClosingParenthesisMustBeOnLineOfLastParameter
+
+            The closing parenthesis or bracket in a call to a C# method or indexer, or the declaration of a method or
+            indexer, is not placed on the same line as the last parameter.
+        -->
+        <Rule Id="SA1111" Action="None" />
+
+        <!--
+            ClosingParenthesisMustBeOnLineOfOpeningParenthesis
+
+            The closing parenthesis or bracket in a call to a C# method or indexer, or the declaration of a method or
+            indexer, is not placed on the same line as the opening bracket when the element does not take any
+            parameters.
+        -->
+        <Rule Id="SA1112" Action="None" />
+
+        <!--
+            CommaMustBeOnSameLineAsPreviousParameter
+
+            A comma between two parameters in a call to a C# method or indexer, or in the declaration of a method or
+            indexer, is not placed on the same line as the previous parameter.
+        -->
+        <Rule Id="SA1113" Action="None" />
+
+        <!--
+            ParameterListMustFollowDeclaration
+
+            The start of the parameter list for a method or indexer call or declaration does not begin on the same line
+            as the opening bracket, or on the line after the opening bracket.
+        -->
+        <Rule Id="SA1114" Action="None" />
+
+        <!--
+            ParameterMustFollowComma
+
+            A parameter within a C# method or indexer call or declaration does not begin on the same line as the
+            previous parameter, or on the next line.
+        -->
+        <Rule Id="SA1115" Action="None" />
+
+        <!--
+            SplitParametersMustStartOnLineAfterDeclaration
+
+            The parameters to a C# method or indexer call or declaration span across multiple lines, but the first
+            parameter does not start on the line after the opening bracket.
+        -->
+        <Rule Id="SA1116" Action="None" />
+
+        <!--
+            ParametersMustBeOnSameLineOrSeparateLines
+
+            The parameters to a C# method or indexer call or declaration are not all on the same line or each on a
+            separate line.
+        -->
+        <Rule Id="SA1117" Action="None" />
+
+        <!--
+            ParameterMustNotSpanMultipleLines
+
+            A parameter to a C# method or indexer, other than the first parameter, spans across multiple lines.
+        -->
+        <Rule Id="SA1118" Action="None" />
+
+        <!--
+            StatementMustNotUseUnnecessaryParenthesis
+
+            A C# statement contains parenthesis which are unnecessary and should be removed.
+        -->
+        <Rule Id="SA1119" Action="None" />
+
+        <!--
+            CommentsMustContainText
+
+            The C# comment does not contain any comment text.
+        -->
+        <Rule Id="SA1120" Action="None" />
+
+        <!--
+            UseBuiltInTypeAlias
+
+            The code uses one of the basic C# types, but does not use the built-in alias for the type.
+        -->
+        <Rule Id="SA1121" Action="None" />
+
+        <!--
+            UseStringEmptyForEmptyStrings
+
+            The C# code includes an empty string, written as `""`.
+        -->
+        <Rule Id="SA1122" Action="None" />
+
+        <!--
+            DoNotPlaceRegionsWithinElements
+
+            The C# code contains a region within the body of a code element.
+        -->
+        <Rule Id="SA1123" Action="None" />
+
+        <!--
+            DoNotUseRegions
+
+            The C# code contains a region.
+        -->
+        <Rule Id="SA1124" Action="None" />
+
+        <!--
+            UseShorthandForNullableTypes
+
+            The Nullable type has been defined not using the C# shorthan
+        .-->
+        <Rule Id="SA1125" Action="None" />
+
+        <!--
+            PrefixCallsCorrectly
+
+            A call to a member is not prefixed with the 'this.', 'base.', 'object.' or 'typename.' prefix to indicate
+            the intended method call, within a C# code file.
+        -->
+        <Rule Id="SA1126" Action="None" />
+
+        <!--
+            GenericTypeConstraintsMustBeOnOwnLine
+
+            A generic constraint on a type or method declaration is on the same line as the declaration, within a C#
+            code file.
+        -->
+        <Rule Id="SA1127" Action="None" />
+
+        <!--
+            ConstructorInitializerMustBeOnOwnLine
+
+            A constructor initializer is on the same line as the constructor declaration, within a C# code file.
+        -->
+        <Rule Id="SA1128" Action="None" />
+
+        <!--
+            DoNotUseDefaultValueTypeConstructor
+
+            A value type was constructed using the syntax `new T()`.
+        -->
+        <Rule Id="SA1129" Action="None" />
+
+        <!--
+            UseLambdaSyntax
+
+            An anonymous method was declared using the form `delegate (parameters) { }`, when a lambda expression would
+            provide equivalent behavior with the syntax `(parameters) => {
+        }`.-->
+        <Rule Id="SA1130" Action="None" />
+
+        <!--
+            UseReadableConditions
+
+            A comparison was made between a variable and a literal or constant value, and the variable appeared on the
+            right-hand side of the expressio
+        .-->
+        <Rule Id="SA1131" Action="None" />
+
+        <!--
+            DoNotCombineFields
+
+            Two or more fields were declared in the same field declaration syntax.
+        -->
+        <Rule Id="SA1132" Action="None" />
+
+        <!--
+            DoNotCombineAttributes
+
+            Two or more attributes appeared within the same set of square brackets.
+        -->
+        <Rule Id="SA1133" Action="None" />
+
+        <!--
+            AttributesMustNotShareLine
+
+            An attribute is placed on the same line of code as another attribute or element.
+        -->
+        <Rule Id="SA1134" Action="None" />
+
+        <!--
+            UsingDirectivesMustBeQualified
+
+            A using directive is not qualifie
+        .-->
+        <Rule Id="SA1135" Action="None" />
+
+        <!--
+            EnumValuesShouldBeOnSeparateLines
+
+            Multiple enum values are placed on the same line of code.
+        -->
+        <Rule Id="SA1136" Action="None" />
+
+        <!--
+            ElementsShouldHaveTheSameIndentation
+
+            Two sibling elements which each start on their own line have different levels of indentatio
+        .-->
+        <Rule Id="SA1137" Action="None" />
+
+        <!--
+            UseLiteralsSuffixNotationInsteadOfCasting
+
+            Use literal suffix notation instead of casting.
+        -->
+        <Rule Id="SA1139" Action="None" />
+
+        <!--
+            UseTupleSyntax
+
+            Use tuple syntax instead of the underlying ValueTuple implementation typ
+        .-->
+        <Rule Id="SA1141" Action="None" />
+
+        <!--
+            ReferToTupleElementsByName
+
+            An element of a tuple was referenced by its metadata name when an element name is availabl
+        .-->
+        <Rule Id="SA1142" Action="None" />
+
+    </Rules>
+</RuleSet>

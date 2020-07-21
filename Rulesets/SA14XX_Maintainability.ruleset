@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Maintainability Rules
+    https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/MaintainabilityRules.md
+
+    Rules which improve code maintainability.
+-->
+
+<RuleSet Name="SA14XX" ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers">
+
+        <!--
+            AccessModifierMustBeDeclared
+
+            The access modifier for a C# element has not been explicitly defined.
+        -->
+        <Rule Id="SA1400" Action="None" />
+
+        <!--
+            FieldsMustBePrivate
+
+            A field within a C# class has an access modifier other than private.
+        -->
+        <Rule Id="SA1401" Action="None" />
+
+        <!--
+            FileMayOnlyContainASingleType
+
+            A C# code file contains more than one unique type.
+        -->
+        <Rule Id="SA1402" Action="None" />
+
+        <!--
+            FileMayOnlyContainASingleNamespace
+
+            A C# code file contains more than one namespace.
+        -->
+        <Rule Id="SA1403" Action="None" />
+
+        <!--
+            CodeAnalysisSuppressionMustHaveJustification
+
+            A Code Analysis SuppressMessage attribute does not include a justification.
+        -->
+        <Rule Id="SA1404" Action="None" />
+
+        <!--
+            DebugAssertMustProvideMessageText
+
+            A call to Debug.Assert in C# code does not include a descriptive message.
+        -->
+        <Rule Id="SA1405" Action="None" />
+
+        <!--
+            DebugFailMustProvideMessageText
+
+            A call to Debug.Fail in C# code does not include a descriptive message.
+        -->
+        <Rule Id="SA1406" Action="None" />
+
+        <!--
+            ArithmeticExpressionsMustDeclarePrecedence
+
+            A C# statement contains a complex arithmetic expression which omits parenthesis around operators.
+        -->
+        <Rule Id="SA1407" Action="None" />
+
+        <!--
+            ConditionalExpressionsMustDeclarePrecedence
+
+            A C# statement contains a complex conditional expression which omits parenthesis around operators.
+        -->
+        <Rule Id="SA1408" Action="None" />
+
+        <!--
+            RemoveUnnecessaryCode
+
+            A C# file contains code which is unnecessary and can be removed without changing the overall logic of the
+            code.
+        -->
+        <Rule Id="SA1409" Action="None" />
+
+        <!--
+            RemoveDelegateParenthesisWhenPossible
+
+            A call to a C# anonymous method does not contain any method parameters, yet the statement still includes
+            parenthesis.
+        -->
+        <Rule Id="SA1410" Action="None" />
+
+        <!--
+            AttributeConstructorMustNotUseUnnecessaryParenthesis
+
+            An attribute declaration does not contain any parameters, yet it still includes parenthesis.
+        -->
+        <Rule Id="SA1411" Action="None" />
+
+        <!--
+            StoreFilesAsUtf8
+
+            The encoding of the file is not UTF-8 with byte order mark.
+        -->
+        <Rule Id="SA1412" Action="None" />
+
+        <!--
+            UseTrailingCommasInMultiLineInitializers
+
+            A multi-line initializer should use a comma on the last item.
+        -->
+        <Rule Id="SA1413" Action="None" />
+
+        <!--
+            TupleTypesInSignaturesShouldHaveElementNames
+
+            Tuple types appearing in member declarations should have explicitly named tuple element
+        .-->
+        <Rule Id="SA1414" Action="None" />
+
+    </Rules>
+</RuleSet>
